@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../kode/.idea/kode.iml" filepath="$PROJECT_DIR$/../kode/.idea/kode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../letskodeit/.idea/letskodeit.iml" filepath="$PROJECT_DIR$/../letskodeit/.idea/letskodeit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/pycharmworkspace.iml" filepath="$PROJECT_DIR$/.idea/pycharmworkspace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../udemy/.idea/udemy.iml" filepath="$PROJECT_DIR$/../udemy/.idea/udemy.iml" />
+    </modules>
+  </component>
+</project>
