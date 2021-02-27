@@ -34,7 +34,7 @@ class mProAutomate:
         username.send_keys("447660")
 
         password= self.driver.find_element(By.ID, "password")
-        password.send_keys("MNYL@2020")
+        password.send_keys("Mnyl@2020")
 
         btnSign=self.driver.find_element(By.XPATH,"//*[contains(text(),'SIGN')]")
         btnSign.click()
