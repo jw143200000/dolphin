@@ -56,7 +56,7 @@ class mProAutomate:
         time.sleep(1)
 
         panFill= self.driver.find_element(By.XPATH,"//*[@name='panNumber']")
-        panFill.send_keys("PPPPP8976B")
+        panFill.send_keys("AVKPR1734K")
 
         self.wait.until(EC.element_to_be_clickable((By.XPATH,"//*[@name='mobileNumber']")))
         mobNumberFill= self.driver.find_element(By.XPATH,"//*[@name='mobileNumber']")
@@ -78,23 +78,23 @@ class mProAutomate:
 
         self.wait.until(EC.element_to_be_clickable((By.XPATH,"//*[@name='firstName']")))
         firstNameFill = self.driver.find_element(By.XPATH,"//*[@name='firstName']")
-        firstNameFill.send_keys("Gyan Singh")
+        firstNameFill.send_keys("Bhagat")
 
         lastNameFill = self.driver.find_element(By.XPATH,"//*[@name='lastName']")
-        lastNameFill.send_keys("Ganga")
+        lastNameFill.send_keys("Ram")
 
         calendarFill= self.driver.find_element(By.XPATH,"//*[@name='dateOfBirth']")
         calendarFill.click()
 
         yearDropdown = self.driver.find_element(By.XPATH,"//*[@class='react-datepicker__year-select']")
         yearSel = Select(yearDropdown)
-        yearSel.select_by_value('1996')
+        yearSel.select_by_value('1985')
 
         monthDropdown = self.driver.find_element(By.XPATH,"//*[@class='react-datepicker__month-select']")
         monthSel= Select(monthDropdown)
-        monthSel.select_by_value('1')
+        monthSel.select_by_value('8')
 
-        dateSel=self.driver.find_element(By.XPATH,"//*[@aria-label='day-13']")
+        dateSel=self.driver.find_element(By.XPATH,"//*[@aria-label='day-22']")
         dateSel.click()
         time.sleep(2)
         #
@@ -112,24 +112,24 @@ class mProAutomate:
         time.sleep(1)
         print("Country Filled")
         stateFill = self.driver.find_element(By.XPATH, "//*[@name='permanentState']")
-        stateFill.send_keys('HARYANA')
+        stateFill.send_keys('MAHARASHTRA')
         time.sleep(1)
-        stateToSel=self.driver.find_element(By.XPATH, "//*[contains(text(),'HAR')]")
+        stateToSel=self.driver.find_element(By.XPATH, "//*[contains(text(),'MAH')]")
         stateToSel.click()
         time.sleep(1)
         print("State Filled")
 
         cityFill = self.driver.find_element(By.XPATH, "//*[@name='permanentCity']")
         cityFill.click()
-        cityFill.send_keys('GURUGRAM')
+        cityFill.send_keys('MUMBAI')
         time.sleep(1)
-        cityToSel= self.driver.find_element(By.XPATH, "//*[contains(text(),'GUR')]")
+        cityToSel= self.driver.find_element(By.XPATH, "//*[contains(text(),'MUM')]")
         cityToSel.click()
         time.sleep(1)
         print("City Filled")
 
         pinToFill= self.driver.find_element(By.XPATH, "//*[@name='permanentPinCode']")
-        pinToFill.send_keys('122015')
+        pinToFill.send_keys('400080')
         time.sleep(1)
 
         alternateNumberToFill = self.driver.find_element(By.XPATH, "//*[@name='alternateMobileNo']")
@@ -167,13 +167,13 @@ class mProAutomate:
 
         lifeyearDropdown = self.driver.find_element(By.XPATH, "//*[@class='react-datepicker__year-select']")
         yearSel = Select(lifeyearDropdown)
-        yearSel.select_by_value('1999')
+        yearSel.select_by_value('2000')
 
         lifemonthDropdown = self.driver.find_element(By.XPATH, "//*[@class='react-datepicker__month-select']")
         monthSel = Select(lifemonthDropdown)
         monthSel.select_by_value('1')
 
-        dateSel = self.driver.find_element(By.XPATH, "//*[@aria-label='day-1']")
+        dateSel = self.driver.find_element(By.XPATH, "//*[@aria-label='day-25']")
         dateSel.click()
         time.sleep(2)
 
@@ -181,34 +181,34 @@ class mProAutomate:
         liferelationshipDropdown.click()
         time.sleep(1)
 
-        optionInLifeRelationshipProposer = self.driver.find_element(By.XPATH, "//*[@id ='liId_Others']")
+        optionInLifeRelationshipProposer = self.driver.find_element(By.XPATH, "//*[@id ='liId_Son']")
         optionInLifeRelationshipProposer.click()
         print("Relationship Others  Selected.")
         time.sleep(1)
 
-        grossIncomeFill = self.driver.find_element(By.XPATH, "//*[@name='relationshipWithProposerWhenOther']")
-        grossIncomeFill.send_keys('Brother')
-        print("Specified Relationship")
+        # grossIncomeFill = self.driver.find_element(By.XPATH, "//*[@name='relationshipWithProposerWhenOther']")
+        # grossIncomeFill.send_keys('Brother')
+        # print("Specified Relationship")
 
         #################################################33
         purposeOfInsuranceDropdown= self.driver.find_element(By.XPATH, "(//*[@tabindex='0'])[6]")
         purposeOfInsuranceDropdown.click()
         time.sleep(1)
 
-        optionInInsuranceDropdown=self.driver.find_element(By.XPATH,"//*[contains(text(),'Retirement')]")
+        optionInInsuranceDropdown=self.driver.find_element(By.XPATH,"//*[contains(text(),'Protection')]")
         optionInInsuranceDropdown.click()
-        print("Retirement Selected")
+        print("Protection Selected")
 
         lifeStageDropdown= self.driver.find_element(By.XPATH, "(//*[@tabindex='0'])[7]")
         lifeStageDropdown.click()
         time.sleep(1)
 
-        optionInLifeStage= self.driver.find_element(By.XPATH, "//*[contains(text(), 'Married with children')]")
+        optionInLifeStage= self.driver.find_element(By.XPATH, "//*[@id='liId_Married with children']")
         optionInLifeStage.click()
         print("Married Selected")
 
         grossIncomeFill = self.driver.find_element(By.XPATH, "//*[@name='income']")
-        grossIncomeFill.send_keys('800000')
+        grossIncomeFill.send_keys('1000000')
         print("Gross Income Entered")
 
         existingPolicy=self.driver.find_element(By.XPATH, "(//*[contains(text(),'No')])[3]")
@@ -216,7 +216,7 @@ class mProAutomate:
 
         occupationDropdown = self.driver.find_element(By.XPATH, "(//*[@tabindex='0'])[8]")
         occupationDropdown.click()
-        optionInOccupation = self.driver.find_element(By.XPATH, "//*[@id='liId_Self Employed']")
+        optionInOccupation = self.driver.find_element(By.XPATH, "//*[@id='liId_Salaried']")
         optionInOccupation.click()
         print("Self Employed Selected")
         time.sleep(1)
@@ -243,7 +243,7 @@ class mProAutomate:
         variantType = self.driver.find_element(By.XPATH, "(//*[@tabindex='0'])[12]")
         variantType.click()
         time.sleep(1)
-        optionInvariantType = self.driver.find_element(By.XPATH, "//*[@id='liId_Regular Pay']")
+        optionInvariantType = self.driver.find_element(By.XPATH, "//*[@id='liId_Single Pay']")
         optionInvariantType.click()
         print("Premium Payment Selected")
         time.sleep(1)
@@ -252,7 +252,7 @@ class mProAutomate:
         premiumPaymentTerm = self.driver.find_element(By.XPATH, "(//*[@tabindex='0'])[13]")
         premiumPaymentTerm.click()
         time.sleep(1)
-        optionInPremiumPaymentTerm = self.driver.find_element(By.XPATH, "//*[@id='liId_40']")
+        optionInPremiumPaymentTerm = self.driver.find_element(By.XPATH, "//*[@id='liId_1']")
         optionInPremiumPaymentTerm.click()
         print("Premium Payment Selected")
         time.sleep(1)
@@ -260,7 +260,7 @@ class mProAutomate:
         policyTerm = self.driver.find_element(By.XPATH, "(//*[@tabindex='0'])[14]")
         policyTerm.click()
         time.sleep(1)
-        optionInPolicyTerm = self.driver.find_element(By.XPATH, "//*[@id='liId_40']")
+        optionInPolicyTerm = self.driver.find_element(By.XPATH, "//*[@id='liId_5']")
         optionInPolicyTerm.click()
         print("Policy Term Selected")
         time.sleep(1)
@@ -268,13 +268,13 @@ class mProAutomate:
         paymentFrequency = self.driver.find_element(By.XPATH, "(//*[@tabindex='0'])[15]")
         paymentFrequency.click()
         time.sleep(1)
-        optionInpaymentFrequency = self.driver.find_element(By.XPATH, "//*[@id='liId_Annual']")
+        optionInpaymentFrequency = self.driver.find_element(By.XPATH, "//*[@id='liId_Single']")
         optionInpaymentFrequency.click()
         print("Mode Of Payment Selected")
         time.sleep(1)
 
         SAFill = self.driver.find_element(By.XPATH, "//*[@name='sumAssured']")
-        SAFill.send_keys('650000')
+        SAFill.send_keys('1000000')
         print("SA Entered")
 
         SmokingHabit = self.driver.find_element(By.XPATH, "//*[@for='nosmoke']")
@@ -316,21 +316,21 @@ class mProAutomate:
         maritalStatus = self.driver.find_element(By.XPATH, "(//*[@tabindex='0'])[2]")
         maritalStatus.click()
         time.sleep(1)
-        optionInMaritalStage = self.driver.find_element(By.XPATH, "//*[contains(text(), 'Married')]")
+        optionInMaritalStage = self.driver.find_element(By.XPATH, "//*[@id='liId_Married']")
         optionInMaritalStage.click()
         print("Married Selected")
 
         educationSelect = self.driver.find_element(By.XPATH, "(//*[@tabindex='0'])[3]")
         educationSelect.click()
         time.sleep(1)
-        optionInEducationDropdown= self.driver.find_element(By.XPATH, "//*[@id='liId_Primary School']")
+        optionInEducationDropdown= self.driver.find_element(By.XPATH, "//*[@id='liId_Graduate']")
         optionInEducationDropdown.click()
         print("Education Selected")
 
         industrySelect= self.driver.find_element(By.XPATH, "(//*[@tabindex='0'])[4]")
         industrySelect.click()
         time.sleep(1)
-        optionInIndustrySelect = self.driver.find_element(By.XPATH, "//*[@id='liId_Oil & Natural Gas']")
+        optionInIndustrySelect = self.driver.find_element(By.XPATH, "//*[@id='liId_Others']")
         optionInIndustrySelect.click()
         print("Industry Selected")
         time.sleep(1)
@@ -338,13 +338,13 @@ class mProAutomate:
         organisationSelect = self.driver.find_element(By.XPATH, "(//*[@tabindex='0'])[5]")
         organisationSelect.click()
         time.sleep(1)
-        optionInOrganisationSelect = self.driver.find_element(By.XPATH, "//*[@id='liId_Private Voluntary Organization (PVO)']")
+        optionInOrganisationSelect = self.driver.find_element(By.XPATH, "//*[@id='liId_Govt']")
         optionInOrganisationSelect.click()
         print("Organisation Selected")
         time.sleep(1)
         #
-        # organisationFill = self.driver.find_element(By.XPATH, "//*[@name='companyName']")
-        # organisationFill.send_keys("MAX")
+        organisationFill = self.driver.find_element(By.XPATH, "//*[@name='companyName']")
+        organisationFill.send_keys("MAX")
 
         preferredLanguage= self.driver.find_element(By.XPATH, "(//*[@ tabindex='0'])[6]")
         preferredLanguage.click()
@@ -371,7 +371,7 @@ class mProAutomate:
         accountType.click()
         time.sleep(2)
 
-        accountTypeSelect = self.driver.find_element(By.XPATH, "//*[contains(text(), 'Current Account')]")
+        accountTypeSelect = self.driver.find_element(By.XPATH, "//*[contains(text(), 'Savings Account')]")
         accountTypeSelect.click()
         print("Account Type Selected.")
 
@@ -382,14 +382,14 @@ class mProAutomate:
         dobDropdown = self.driver.find_element(By.XPATH, "(//*[@tabindex='0'])[10]")
         dobDropdown.click()
 
-        optiondobDropdown = self.driver.find_element(By.XPATH, "//*[@id='liId_Voter ID']")
+        optiondobDropdown = self.driver.find_element(By.XPATH, "//*[@id='liId_PAN Card']")
         optiondobDropdown.click()
         time.sleep(1)
 
         educationdropdown = self.driver.find_element(By.XPATH, "(//*[@tabindex='0'])[11]")
         educationdropdown.click()
 
-        optioneducationdropdownn = self.driver.find_element(By.XPATH, "//*[@id='liId_Senior School(12th Pass)']")
+        optioneducationdropdownn = self.driver.find_element(By.XPATH, "//*[@id='liId_Graduate']")
         optioneducationdropdownn.click()
         time.sleep(1)
 
@@ -405,27 +405,32 @@ class mProAutomate:
         indsturyDropdown.click()
         time.sleep(1)
 
-        optionindsturyDropdown= self.driver.find_element(By.XPATH, "//*[@id='liId_Diving']")
+        optionindsturyDropdown= self.driver.find_element(By.XPATH, "//*[@id='liId_Defence']")
         optionindsturyDropdown.click()
         time.sleep(1)
 
         orgDropdown = self.driver.find_element(By.XPATH, "(//*[@tabindex='0'])[14]")
         orgDropdown.click()
         time.sleep(1)
-
-        optionorgDropdown = self.driver.find_element(By.XPATH, "//*[@id ='liId_Private Voluntary Organization (PVO)']")
+        optionorgDropdown = self.driver.find_element(By.XPATH, "//*[@id ='liId_Govt']")
         optionorgDropdown.click()
         time.sleep(1)
 
-        professionalDiver = self.driver.find_element(By.XPATH, "(//*[contains(text(),'No')])[2]")
-        professionalDiver.click()
+        natureDropdown = self.driver.find_element(By.XPATH, "(//*[@tabindex='0'])[15]")
+        natureDropdown.click()
+        time.sleep(1)
+        optionnatureDropdown = self.driver.find_element(By.XPATH, "//*[@id ='liId_Non-combat role']")
+        optionnatureDropdown.click()
         time.sleep(1)
 
-        occDropdown = self.driver.find_element(By.XPATH, "(//*[@tabindex='0'])[15]")
-        occDropdown.click()
-        time.sleep(2)
+        offshore = self.driver.find_element(By.XPATH, "(//*[contains(text(),'No')])[1]")
+        offshore.click()
+        time.sleep(1)
 
-        optionoccDropdown = self.driver.find_element(By.XPATH, "//*[@id='liId_Self Employed']")
+        occDropdown = self.driver.find_element(By.XPATH, "(//*[@tabindex='0'])[16]")
+        occDropdown.click()
+        time.sleep(1)
+        optionoccDropdown = self.driver.find_element(By.XPATH, "//*[@id='liId_Salaried']")
         optionoccDropdown.click()
         time.sleep(1)
 
@@ -433,9 +438,9 @@ class mProAutomate:
         enterIncome.send_keys("500000")
         time.sleep(1)
 
-        # enterorg = self.driver.find_element(By.XPATH, "//*[@name='insurerCompanyName']")
-        # enterorg.send_keys("MAX")
-        # time.sleep(1)
+        enterorg = self.driver.find_element(By.XPATH, "//*[@name='insurerCompanyName']")
+        enterorg.send_keys("MAX")
+        time.sleep(1)
 
         hazardous = self.driver.find_element(By.XPATH, "//*[@for='InsurerHazardousActivitiesNo']")
         hazardous.click()
@@ -447,23 +452,28 @@ class mProAutomate:
         holiday.click()
 
 
-        heightInFeet = self.driver.find_element(By.XPATH, "(//*[@ tabindex='0'])[16]")
+        heightInFeet = self.driver.find_element(By.XPATH, "(//*[@ tabindex='0'])[17]")
         heightInFeet.click()
         time.sleep(1)
         selectHeightInFeet = self.driver.find_element(By.XPATH, "//*[@id='liId_5']")
         selectHeightInFeet.click()
 
-        heightInInches = self.driver.find_element(By.XPATH, "(//*[@ tabindex='0'])[17]")
+        heightInInches = self.driver.find_element(By.XPATH, "(//*[@ tabindex='0'])[18]")
         heightInInches.click()
         time.sleep(1)
-        selectHeightInInches = self.driver.find_element(By.XPATH, "//*[@id='liId_4']")
+        selectHeightInInches = self.driver.find_element(By.XPATH, "//*[@id='liId_5']")
         selectHeightInInches.click()
         time.sleep(1)
 
         weightFill = self.driver.find_element(By.XPATH, "//*[@name='insurerWeightInKgs']")
         weightFill.click()
-        weightFill.send_keys("70")
+        weightFill.send_keys("55")
         time.sleep(2)
+
+        btnProceedOnPage4 = self.driver.find_element(By.XPATH, "//*[contains(text(),'Proceed')]")
+        btnProceedOnPage4.click()
+        print("Proceed Button Clicked.")
+        time.sleep(1)
 
         self.wait.until(EC.element_to_be_clickable((By.XPATH, "//*[contains(text(),'Proceed')]")))
         btnProceedOnPage4 = self.driver.find_element(By.XPATH, "//*[contains(text(),'Proceed')]")

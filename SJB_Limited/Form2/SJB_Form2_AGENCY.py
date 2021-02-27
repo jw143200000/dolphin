@@ -417,9 +417,9 @@ class mProAutomate:
         optionorgDropdown.click()
         time.sleep(1)
 
-        offshore = self.driver.find_element(By.XPATH, "(//*[contains(text(),'No')])[2]")
-        offshore.click()
-        time.sleep(1)
+        # offshore = self.driver.find_element(By.XPATH, "(//*[contains(text(),'No')])[2]")
+        # offshore.click()
+        # time.sleep(1)
 
         occDropdown = self.driver.find_element(By.XPATH, "(//*[@tabindex='0'])[15]")
         occDropdown.click()

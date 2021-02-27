@@ -132,7 +132,7 @@ class mProAutomate:
         time.sleep(1)
 
         pinToFill= self.driver.find_element(By.XPATH, "//*[@name='permanentPinCode']")
-        pinToFill.send_keys('110047')
+        pinToFill.send_keys('110001')
         time.sleep(1)
 
         alternateNumberToFill = self.driver.find_element(By.XPATH, "//*[@name='alternateMobileNo']")
@@ -158,7 +158,7 @@ class mProAutomate:
         addressProof.click()
         time.sleep(1)
 
-        dateSel = self.driver.find_element(By.XPATH, "//*[@aria-label='day-23']")
+        dateSel = self.driver.find_element(By.XPATH, "(//*[@aria-label='day-6'])[2]")
         dateSel.click()
         time.sleep(1)
 

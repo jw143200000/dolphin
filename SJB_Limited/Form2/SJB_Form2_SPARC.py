@@ -407,9 +407,9 @@ class mProAutomate:
         indsturyDropdown.click()
         time.sleep(1)
 
-        pregnant = self.driver.find_element(By.XPATH, "(//*[contains(text(),'No')])[2]")
-        pregnant.click()
-        time.sleep(1)
+        # pregnant = self.driver.find_element(By.XPATH, "(//*[contains(text(),'No')])[2]")
+        # pregnant.click()
+        # time.sleep(1)
 
         optionindsturyDropdown= self.driver.find_element(By.XPATH, "//*[@id='liId_Oil & Natural Gas']")
         optionindsturyDropdown.click()

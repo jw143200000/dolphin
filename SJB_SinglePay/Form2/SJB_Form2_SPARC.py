@@ -78,23 +78,23 @@ class mProAutomate:
 
         self.wait.until(EC.element_to_be_clickable((By.XPATH,"//*[@name='firstName']")))
         firstNameFill = self.driver.find_element(By.XPATH,"//*[@name='firstName']")
-        firstNameFill.send_keys("Bhart")
+        firstNameFill.send_keys("Bhagat")
 
         lastNameFill = self.driver.find_element(By.XPATH,"//*[@name='lastName']")
-        lastNameFill.send_keys("Verma")
+        lastNameFill.send_keys("Ram")
 
         calendarFill= self.driver.find_element(By.XPATH,"//*[@name='dateOfBirth']")
         calendarFill.click()
 
         yearDropdown = self.driver.find_element(By.XPATH,"//*[@class='react-datepicker__year-select']")
         yearSel = Select(yearDropdown)
-        yearSel.select_by_value('1990')
+        yearSel.select_by_value('1985')
 
         monthDropdown = self.driver.find_element(By.XPATH,"//*[@class='react-datepicker__month-select']")
         monthSel= Select(monthDropdown)
-        monthSel.select_by_value('1')
+        monthSel.select_by_value('8')
 
-        dateSel=self.driver.find_element(By.XPATH,"//*[@aria-label='day-13']")
+        dateSel=self.driver.find_element(By.XPATH,"//*[@aria-label='day-22']")
         dateSel.click()
         time.sleep(2)
         #
@@ -129,7 +129,7 @@ class mProAutomate:
         print("City Filled")
 
         pinToFill= self.driver.find_element(By.XPATH, "//*[@name='permanentPinCode']")
-        pinToFill.send_keys('122015')
+        pinToFill.send_keys('400080')
         time.sleep(1)
 
         alternateNumberToFill = self.driver.find_element(By.XPATH, "//*[@name='alternateMobileNo']")
